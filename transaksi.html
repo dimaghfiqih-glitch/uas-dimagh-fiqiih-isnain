@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transaksi</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<header>
+  <h1> Aplikasi Transaksi</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="transaksi.html">Transaksi</a></li>
+      <li><a href="daftar.html">Daftar</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Form Transaksi</h2>
+
+  <form onsubmit="return validasi()">
+    <label>Nama Barang</label><br>
+    <input type="text" id="barang"><br><br>
+
+    <label>Kategori</label><br>
+    <select id="kategori">
+      <option value="">-- Pilih --</option>
+      <option>Makanan</option>
+      <option>Elektronik</option>
+    </select><br><br>
+
+    <label>Jumlah</label><br>
+    <input type="number" id="jumlah"><br><br>
+
+    <button type="submit">Simpan</button>
+  </form>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
